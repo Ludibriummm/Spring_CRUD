@@ -1,12 +1,10 @@
-package web.services;
+package web.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import web.dao.UserDaoImpl;
 import web.entities.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserDAO {
     void add(User user);
     List<User> getAllUsers();
     User getUserById(int id);

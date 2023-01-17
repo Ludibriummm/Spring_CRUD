@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
-public class UserDao {
+public class UserDaoImpl implements UserDAO {
 
     @PersistenceContext
     private EntityManager entityManager;

@@ -1,7 +1,7 @@
 package web.controllers;
 
 import web.entities.User;
-import web.services.UserService;
+import web.services.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class UserController {
-    private final UserService service;
+    private final UserServiceImpl service;
     @Autowired
-    public UserController(UserService service) {
+    public UserController(UserServiceImpl service) {
         this.service = service;
     }
 
