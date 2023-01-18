@@ -14,6 +14,13 @@
     </th:block>
 </div>
 <div>
+    <p>
+        <form method="get" action="delete/all">
+        <button class="delete">Delete all users</button>
+        </form>
+    </p>
+</div>
+<div>
     <h2>Add new user:</h2>
         <form method="post" action="/create">
             <label for="name">Name</label>
@@ -32,13 +39,6 @@
             <button>Add user</button>
         </form>
 </div>
-<div>
-    <p>
-        <form method="get" action="delete/all">
-        <button>Delete all users</button>
-        </form>
-    </p>
-</div>
 </body>
 <style>
     h1{
@@ -52,6 +52,9 @@
     body{
         background: #9E7676;
         color: #FFF8EA;
+    }
+    button.delete{
+        float:right;
     }
     button{
         background: none;
